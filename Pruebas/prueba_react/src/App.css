@@ -1,0 +1,52 @@
+.container-fluid{
+
+}
+
+.movieList{
+  margin-top: 15px;
+  animation:slidein 4s;
+}
+.movie{
+  vertical-align: top;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: #eee 3px solid;
+}
+  .movie h3{
+    line-height: 1em;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .movie p{
+    font-size: 0.9em;
+    overflow: hidden;
+    display: none;
+  }
+
+.movieLinks{
+  padding-top: 15px;
+  /*height: 100vh;*/
+  background: #ddd;
+
+}
+  .movieLinks a{
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+      cursor: pointer;
+}
+
+@keyframes slidein {
+  0% {
+   opacity:0;
+  }
+  50% {
+   opacity:0.7;
+  }
+  100% {
+   opacity:1;
+  }
+}
