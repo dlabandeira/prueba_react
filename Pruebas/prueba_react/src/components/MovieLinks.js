@@ -1,20 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class MovieLinks extends Component {
+const MovieLinks = props => {
 
-	loadDatosGenre = (ev) => {
-		ev.preventDefault();
-		this.props.loadDatos(ev.target.id);
-	}
-	render(){
-
-		return(
-			<div className="movieLinks col-md-2 col-12">
-				<a onClick={this.loadDatosGenre} id="Comedy">Comedia</a>
-				<a onClick={this.loadDatosGenre} id="Action">Acción</a>
-				<a onClick={this.loadDatosGenre} id="Horror">Terror</a>
-				<a onClick={this.loadDatosGenre} id="Sci-Fi">Ciencia Ficción</a>
-			</div>
-		)
-	}
+	return(
+		<div className="movieLinks col-md-2 col-12">
+			<a onClick={props.loadDatosGenre} id="Comedy">Comedia</a>
+			<a onClick={props.loadDatosGenre} id="Action">Acción</a>
+			<a onClick={props.loadDatosGenre} id="Horror">Terror</a>
+			<a onClick={props.loadDatosGenre} id="Sci-Fi">Ciencia Ficción</a>
+		</div>
+	)
 }
+
+export default MovieLinks;
