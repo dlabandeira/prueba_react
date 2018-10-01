@@ -2,13 +2,16 @@ import React from 'react';
 import MovieItem from './MovieItem';
 
 const MovieList = props => {	
+
 	if(props.listado){
 		return(
-			<div className="col-md-10 col-12">
+			<div className="col-12">
+			<h1>Destacados</h1>
 				<div className='movieList row'>
+				
 				{
 					props.listado.map((movie) => {
-						return <MovieItem data={movie} key={movie.id} />
+						return <MovieItem data={movie} key={movie.id} handleClickMovie={props.handleClickMovie} />
 					})
 				}
 				</div>

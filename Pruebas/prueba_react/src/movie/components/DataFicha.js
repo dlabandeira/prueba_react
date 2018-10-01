@@ -1,0 +1,28 @@
+import React from 'react';
+
+const DataFicha = props => {	
+	//console.log(props);
+	return(
+		<div className="col-2 cell">
+			{
+				props.profile_path ?
+					<img id={props.id} src={"https://image.tmdb.org/t/p/w185_and_h278_bestv2/"+props.profile_path} alt={props.title} className="col-12" />
+				:
+				<img id={props.id} src="data:image/png;base64,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" alt={props.title} className="col-12" />
+				
+			}
+			
+			<h3 id={props.id} className="col-12">{props.name}</h3>
+			{
+				props.character ?
+					<p id={props.id} className="col-12">{props.character}</p>
+				:
+					<p id={props.id} className="col-12">{props.department}</p>
+			}
+
+		</div>
+	)
+
+}
+
+export default DataFicha;

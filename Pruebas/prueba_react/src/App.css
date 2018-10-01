@@ -1,7 +1,37 @@
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #111;
+}
+.title{
+  width: 100%;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .container-fluid{
 
 }
-
+.homeLayout{
+}
+.utilsLayout{
+  /*height: 100vh;*/
+  background: #081c24;
+}
+.movieLayout{
+  padding-top: 15px;
+  text-align: right;
+}
+.footerLayout{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #fff;
+  text-align: center;
+  background: #081c24;
+}
 .movieList{
   margin-top: 15px;
   animation:slidein 4s;
@@ -25,19 +55,113 @@
     display: none;
   }
 
-.movieLinks{
+.dataTitle{
+  margin-top: 15px;
   padding-top: 15px;
-  /*height: 100vh;*/
+  padding-bottom: 15px;
+  background: #eee;
+  text-align: left;
+}
+.dataRelated{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 400px;
+  font-size: 0.8em;
+  overflow: hidden;
   background: #ddd;
+}
+.dataTags{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: left;
+  border-bottom: 3px solid #eee;
+}
+.dataCasting{
+  width:98vw;
+  overflow-y: hidden;
+}
+  .dataCasting .row{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+.dataCasting .row .cell{
+  overflow: hidden;
+  height: 300px;
+  display: inline-block;
+  float: none;
+}
+  .dataCasting h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 45px;
+    height: auto;
+    font-size: 1.1em;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  .dataCasting p{
+    font-size: 0.8em;
+    line-height: 0.8em;
+  }
+
+.movieLinks{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 
 }
   .movieLinks a{
-    width: 100%;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
     display: inline-block;
     text-decoration: none;
-    color: inherit;
-      cursor: pointer;
+    color: #fff !important;
 }
+
+.moviePaginator{
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-top:5px;
+  padding-bottom:5px;
+  text-align: right;
+  background: #ddd;
+}
+  .moviePaginator a{
+    margin-left: 5px;
+    margin-right:5px;
+  }
+  .moviePaginator strong{
+    margin-left: 5px;
+    margin-right:5px;
+    font-size: 1.2em;
+  }
+.userLayout{
+  height: 40px;
+  text-align: left;
+}
+.userLayout img{
+   height: 40px;
+}
+.userLayout p{
+  margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes slidein {
   0% {

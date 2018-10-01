@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieSearch = props => {
 	return(
-		<div className="col-12">
+		<div className='col-md-6'>
 			<form onSubmit={props.handleSearchSubmit}>
 				<input
 					ref={props.setRef}
